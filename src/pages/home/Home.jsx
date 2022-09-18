@@ -5,7 +5,7 @@ import { GlobalStyles } from '../../components/GlobalStyles'
 import Header from '../../components/header/Header'
 import HomeContainer from './Home.styles'
 import HomeStyles from './Home.styles'
-import axios from 'axios'
+// import axios from 'axios'
 
 const Home = () => {
   const API_KEY = "aa38f38180351269c73dbca473efca33"
@@ -15,10 +15,9 @@ const Home = () => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=${Unit}`
 
   const getData = async() => {
-    const response = await axios(url)
-    const {main, name, sys, id,weather} = response.data;
-    setWeatherData([...weatherData, {main, name, sys, id,weather} ])
-
+    const res = await fetch(url)
+    const {weather, sys, main, name} = await res.json();
+    setWeatherData([...weatherData, {weather, sys, main, name} ])
   }
 
   // console.log(weatherData);
