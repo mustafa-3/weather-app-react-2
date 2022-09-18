@@ -8,7 +8,7 @@ export const Input = styled.input`
   padding: 1rem;
   font-size: 2rem;
   color: white;
-  margin-left: 30%;
+
   @media (max-width: 700px) {
     width: 90%;
     margin: auto;
@@ -32,9 +32,10 @@ export const Image = styled.img`
 `;
 
 export const FormContainer = styled.div`
-  text-align: center;
-  padding: 1rem;
   display: flex;
+  justify-content: center;
+  padding: 1rem;
+
   @media (max-width: 700px) {
     flex-direction: column;
   }
