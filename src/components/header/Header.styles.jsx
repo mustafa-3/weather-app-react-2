@@ -8,24 +8,47 @@ export const Input = styled.input`
   padding: 1rem;
   font-size: 2rem;
   color: white;
+  margin-left:30%;
   @media (max-width:700px) {
     width: 90%;
+    margin:auto;
   }
   
 `;
 
 
-
-
-export const ButtonContainer = styled.div`
-  text-align:center;
-  
+export const ImageContainer = styled.div`
+ text-align:center;
 `;
 
-export const InputContainer = styled.div`
+
+
+export const Title = styled.h1`
+  text-align:center;
+  font-size: 3rem;
+`;
+
+
+export const Image = styled.img`
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  opacity: .5;
+`;
+
+
+
+
+export const FormContainer = styled.div`
   text-align:center;
   padding: 1rem;
+  display: flex;
+  @media (max-width:700px) {
+    flex-direction: column;
+  }
+ 
 `;
+
 
 
 
@@ -38,6 +61,7 @@ export const Button = styled.button`
   border-radius: .3em;
   color: white;
   font-size: 2rem;
+  margin-left:1rem;
   cursor: pointer;
   &:hover {
     transform: scale(.97);
@@ -49,6 +73,8 @@ export const Button = styled.button`
   }
   @media (max-width:700px) {
     width: 90%;
+    margin: auto;
+    margin-top: 1rem;
   }
 `;
 

@@ -15,7 +15,7 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  /* text-align:center */
+  align-items: center;
   
  
   

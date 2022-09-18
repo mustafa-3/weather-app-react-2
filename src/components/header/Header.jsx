@@ -1,10 +1,15 @@
 import { Form } from "react-router-dom";
 import HeaderStyles, {
   Button,
-  ButtonContainer,
+ 
+  FormContainer,
+  Image,
+  ImageContainer,
   Input,
-  InputContainer,
+  
+  Title,
 } from "./Header.styles";
+import WeatherImg from "../../assets/weather-icon.jpg"
 
 const Header = ({setCityName, getData}) => {
 
@@ -17,14 +22,16 @@ const Header = ({setCityName, getData}) => {
 
   return (
     <div>
+      <ImageContainer>
+      <Image src={WeatherImg}/>
+      </ImageContainer>
+      <Title>Weather App</Title>
       <form onSubmit={handleSubmit}>
-        <InputContainer>
-          <Input onChange={(e) => setCityName(e.target.value) } />
-        </InputContainer>
-
-        <ButtonContainer>
+        <FormContainer>
+          <Input placeholder="Search for a city.." required onChange={(e) => setCityName(e.target.value) } />
           <Button>Search</Button>
-        </ButtonContainer>
+        </FormContainer>
+
       </form>
     </div>
   );

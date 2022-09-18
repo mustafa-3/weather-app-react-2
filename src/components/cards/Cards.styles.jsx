@@ -5,6 +5,7 @@ export const Card = styled.div`
   height: 300px;
   background: hsl(200,100%,6%, .7);
   text-align:center;
+  border-radius: .3rem;
  
 `;
 
