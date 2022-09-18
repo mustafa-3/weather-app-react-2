@@ -16,6 +16,7 @@ export const CardsContainer = styled.div`
   gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
   
  
   
