@@ -1,4 +1,4 @@
-import NotFound from "../NotFound";
+// import NotFound from "../NotFound";
 import CardsStyles, {
   Card,
   CardsContainer,
@@ -13,7 +13,7 @@ import CardsStyles, {
 const Cards = ({ weatherData, error }) => {
   console.log(weatherData);
   if (error) {
-    return <NotFound />;
+    return <h1>City has not found</h1>;
   } else if (!weatherData) {
     return (
       <div>
