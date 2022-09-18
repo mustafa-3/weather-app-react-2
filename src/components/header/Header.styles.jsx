@@ -8,7 +8,7 @@ export const Input = styled.input`
   padding: 1rem;
   font-size: 2rem;
   color: white;
-  margin-left: 100px;
+  margin-left: 30%;
   @media (max-width: 700px) {
     width: 90%;
     margin: auto;
