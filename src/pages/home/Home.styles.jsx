@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HomeContainer = styled.div`
-  background-image: url(https://source.unsplash.com/random) ;
+  background-image: url(https://source.unsplash.com/random);
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,10 +17,4 @@ export const CardsContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  
- 
-  
-  /* background-color: #333; */
-  
-  /* padding: 10px; */
 `;

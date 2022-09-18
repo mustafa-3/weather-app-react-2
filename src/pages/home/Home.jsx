@@ -6,7 +6,6 @@ import Header from "../../components/header/Header";
 import HomeContainer, { CardsContainer } from "./Home.styles";
 import HomeStyles from "./Home.styles";
 
-
 const Home = () => {
   const [cityName, setCityName] = useState();
   const [weatherData, setWeatherData] = useState([]);
@@ -34,9 +33,9 @@ const Home = () => {
       <GlobalStyles />
       <Header setCityName={setCityName} getData={getData} />
       <CardsContainer>
-      {weatherData?.map((item, index) => (
-        <Cards weatherData={item} key={index} error={error} />
-      ))}
+        {weatherData?.map((item, index) => (
+          <Cards weatherData={item} key={index} error={error} />
+        ))}
       </CardsContainer>
     </HomeContainer>
   );
