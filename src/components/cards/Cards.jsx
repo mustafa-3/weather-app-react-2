@@ -1,5 +1,5 @@
 import NotFound from "../NotFound";
-import CardsStyles, { Card, CardsContainer, Image, Inf, Temp, TempContainer, Title } from "./Cards.styles";
+import CardsStyles, { Card, CardsContainer, ConditionText, Image, Inf, Temp, TempContainer, Title } from "./Cards.styles";
 
 const Cards = ({ weatherData, error }) => {
   console.log(weatherData);
@@ -25,6 +25,7 @@ const Cards = ({ weatherData, error }) => {
         <p>C</p>
         </TempContainer>
         <Image src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}/>
+        <ConditionText>{weatherData.weather[0].main}</ConditionText>
       </Card>
     </div>
     );

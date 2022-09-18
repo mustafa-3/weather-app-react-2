@@ -5,10 +5,7 @@ export const Card = styled.div`
   height: 300px;
   background: hsl(200,100%,6%, .7);
   text-align:center;
-  @media (max-width:700px) {
-    width: 90%;
-    
-  }
+ 
 `;
 
 
@@ -51,6 +48,10 @@ export const Temp = styled.h4`
 `;
 
 
+export const ConditionText = styled.h4`
+  font-size: 2rem;
+  
+`;
 
 
 

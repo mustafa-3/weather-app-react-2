@@ -11,10 +11,11 @@ const HomeContainer = styled.div`
 export default HomeContainer;
 
 export const CardsContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
-  text-align:center
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  /* text-align:center */
   
  
   
