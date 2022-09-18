@@ -1,12 +1,19 @@
-import CardsStyles, { Card } from './Cards.styles'
+import NotFound from "../NotFound";
+import CardsStyles, { Card } from "./Cards.styles";
 
-const Cards = ({weatherData}) => {
+const Cards = ({ weatherData, error }) => {
   console.log(weatherData);
-  return (
-    <Card>
-      <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt="" />
-    </Card>
-  )
-}
+  if (error) {
+    return <NotFound />;
+  } else if (!weatherData) {
+    return (
+      <div>
+        <h2>Data is Fetching</h2>
+      </div>
+    );
+  } else {
+    return <div>asd</div>;
+  }
+};
 
-export default Cards
+export default Cards;

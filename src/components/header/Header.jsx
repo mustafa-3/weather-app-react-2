@@ -11,7 +11,9 @@ const Header = ({setCityName, getData}) => {
   const handleSubmit = (e)=> {
     e.preventDefault()
     getData()
+    // setCityName("")
   }
+  
 
   return (
     <div>
