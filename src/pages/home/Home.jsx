@@ -3,9 +3,9 @@ import { useState } from "react";
 import Cards from "../../components/cards/Cards";
 import { GlobalStyles } from "../../components/GlobalStyles";
 import Header from "../../components/header/Header";
-import HomeContainer from "./Home.styles";
+import HomeContainer, { CardsContainer } from "./Home.styles";
 import HomeStyles from "./Home.styles";
-// import axios from 'axios'
+
 
 const Home = () => {
   const [cityName, setCityName] = useState();
@@ -33,9 +33,11 @@ const Home = () => {
     <HomeContainer>
       <GlobalStyles />
       <Header setCityName={setCityName} getData={getData} />
+      <CardsContainer>
       {weatherData?.map((item, index) => (
         <Cards weatherData={item} key={index} error={error} />
       ))}
+      </CardsContainer>
     </HomeContainer>
   );
 };
